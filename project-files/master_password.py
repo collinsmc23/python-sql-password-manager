@@ -4,13 +4,14 @@ from pbkdf2 import PBKDF2
 import hashlib
 from base64 import b64encode, b64decode
 
-
-salt = b'.Y\x18\xcf\xe5\x044\x08'
+# Enter salt here in ******* field. Enter binary string.
+salt = b'********'
 
 
 def query_master_pwd(master_password, second_FA_location): 
 
-    master_password_hash = "a6d8c9a7a3eda3fa56228a5ac3bf7157556de5bb74a2bcb6a0811caa01ccd665"
+    # Enter password hash in ******** field. Use PBKDF2 and Salt from above.
+    master_password_hash = "********"
 
     compile_factor_together = hashlib.sha256(master_password + second_FA_location).hexdigest()
 
