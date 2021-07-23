@@ -10,7 +10,7 @@ salt = b'********'
 
 def query_master_pwd(master_password, second_FA_location): 
 
-    # Enter password hash in ******** field. Use PBKDF2 and Salt from above. Use master_password_generator.py to generate a master password hash.
+    # Enter password hash in ******** field. Use PBKDF2 and Salt from above. Use master_password_hash_generator.py to generate a master password hash.
     master_password_hash = "********"
 
     compile_factor_together = hashlib.sha256(master_password + second_FA_location).hexdigest()
