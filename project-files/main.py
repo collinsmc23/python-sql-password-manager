@@ -15,11 +15,11 @@ def main():
     
     master_password_input = getpass.getpass("Master Password: ").encode()
 
-    second_FA_location = "Dee Boo Dah".encode()
+    second_fa_location = "Dee Boo Dah".encode()
 
-    master_password_hash = hashlib.sha256(master_password_input + second_FA_location).hexdigest()
+    master_password_hash = hashlib.sha256(master_password_input + second_fa_location).hexdigest()
 
-    if master_password.query_master_pwd(master_password_input, second_FA_location) is True:
+    if master_password.query_master_pwd(master_password_input, second_fa_location) is True:
         
         connection = db_connect.connection_db()
 
@@ -82,9 +82,9 @@ def main():
         print("Record added with custom password.")
 
     if args.update_url:
-        new_URL = args.update_url[0]
-        old_URL = args.update_url[1]
-        cursor.execute(sql.update_db_url(), (new_URL, old_URL, ))
+        new_url = args.update_url[0]
+        old_url = args.update_url[1]
+        cursor.execute(sql.update_db_url(), (new_url, old_url, ))
 
     if args.update_username:
         new_username = args.update_username[0]
