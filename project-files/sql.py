@@ -1,4 +1,3 @@
-from re import S
 import psycopg2
 
 def insert_db_row():
