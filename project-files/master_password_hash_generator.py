@@ -1,9 +1,6 @@
 from hashlib import sha256
 import hashlib
 
-# Enter salt in ******* field. Salt must be in bytes.
-salt = b'*******'
-
 def master_password_gen(): 
 
     master_password = input("Enter your password: ").encode()
