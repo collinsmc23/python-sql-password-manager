@@ -1,8 +1,8 @@
 from hashlib import sha256
 import hashlib
 
-
-salt = b'.Y\x18\xcf\xe5\x044\x08'
+# Enter salt in ******* field. Salt must be in bytes.
+salt = b'*******'
 
 def master_password_gen(): 
 
