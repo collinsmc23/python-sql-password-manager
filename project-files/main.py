@@ -1,5 +1,5 @@
 import password_generator
-import sql
+import sql_statements
 import db_connect 
 import psycopg2
 import argparse
