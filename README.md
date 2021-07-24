@@ -31,5 +31,19 @@ Enter the master password hash inside the master_password_hash variable inside t
 Enter in correct username, database name, and password inside the db_connect.py file.  
 
 ### Step 4: Run Main.py  
-Enter the master password with one of the following parameters.  
+Run main.py with all files inside the same directory.
 
+```main.py [ARGUMENT] [OPTIONS}```  
+
+Example to add Password: ```main.py -a https://cybercademy.org gcollins```  
+
+Enter the one of the following paramters:
+
+-a or --add [WEBSITE URL] [USERNAME]: Automatically generates a random 20 character string for password.  
+-q or --query [WEBSITE URL]: Look up field by website URL.  
+-l or --list: List all stored fields in password vault.  
+-d or --delete [WEBSITE URL]: Delete a field by website URL.  
+-ap or --add_password [WEBSITE_URL] [USERNAME] [PASSWORD]: Enter in a URL, username, and custom password.  
+-uurl or --update_url [NEW_URL] [OLD_URL]: Update the URL with new URL to currently stored URL.  
+-uuname or --update_username [URL] [NEW_USERNAME]: Update username of stored URL.
+-upasswd or --update_password [URL] [NEW_PASSWORD]: Update new password by stored URL.
